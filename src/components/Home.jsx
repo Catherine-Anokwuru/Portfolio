@@ -12,11 +12,11 @@ const Home = () => {
     <>
       <section
         id="home"
-        className=" py-[70px]  px-[2%] relative phone:h-[100vh] h-[100vh] w-full"
+        className=" pt-[70px]  px-[2%] h-[100vh] w-full overflow-hidden"
       >
         <div className="grid-cols-[40%_60%] grid phone:grid-cols-1 phone:gap gap-x-[1rem] w-[90%] m-auto overflow-hidden">
           <div>
-            <div className=" py-[10rem] phone:pb-[3rem] phone:pt-[5rem] text-dark-green font-opensans">
+            <div className=" py-[10rem] phone:pb-[3rem] phone:pt-[6rem] text-dark-green font-opensans">
               <h2 className="text-[2.6rem] text-center phone:text-2xl tab:text-3xl font-garamond w-[100%]">
                 I'm Catherine Anokwuru.
               </h2>
@@ -42,18 +42,7 @@ const Home = () => {
                 />
               </h2>
 
-              {/* <div className=" py-[1rem] pl-[1rem] text-center">
-                {social.map((socials) => {
-                  const { id, url, icon } = socials;
-                  return (
-                    <a href={url} key={id} target="blank" className="pr-[1rem]">
-                      <button className=" text-off-white text-xl  hover:text-orange">
-                        {icon}
-                      </button>
-                    </a>
-                  );
-                })}
-              </div> */}
+
 
               <div className=" py-[2rem] text-center phone:py-[1rem]">
                 {social.map((socials) => {
@@ -65,7 +54,7 @@ const Home = () => {
                       target="blank"
                       className=" py-[0.5rem] pr-[0.3rem] "
                     >
-                      <button className=" bg-orange border-off-white border-2 rounded-[0.5rem] pl-[1rem] py-[0.5rem] pr-[0.5rem] text-off-white text-xl hover:bg-off-white hover:text-orange ">
+                      <button className=" bg-orange border-off-white border-2 rounded-[0.5rem] pl-[0.7rem] py-[0.5rem] pr-[0.7rem] text-off-white text-xl hover:bg-off-white hover:text-orange ">
                         {icon}
                       </button>
                     </a>
@@ -74,8 +63,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-[110%] phone:w-[100%] m-auto">
-            <img src={home} alt="" className="w-[100%]" />
+          <div className="w-[110%] phone:w-[100%] m-auto phone:mt-[3rem]">
+            <img src={home} alt="" className="w-[100%] h-auto" />
           </div>
         </div>
       </section>

@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
 import { toast } from "react-toastify";
 
 const Contact = () => {
@@ -34,12 +33,7 @@ const Contact = () => {
       <div className="contact-head">
         <h1> Contact Me</h1>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}
-      >
+
         <div className="contact-container">
           <div className="contact-text">
             <h4>Get in touch with me</h4>
@@ -100,7 +94,6 @@ const Contact = () => {
             </div>
           </form>
         </div>
-      </motion.div>
     </section>
   );
 };

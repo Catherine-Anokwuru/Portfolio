@@ -62,25 +62,25 @@ export const links = [
 export const social = [
   {
     id: nanoid(),
-    url: "https://www.twitter.com",
+    url: "https://github.com/Catherine-Anokwuru",
     icon: <FaGithub />,
     text: "Github",
   },
+  // {
+  //   id: nanoid(),
+  //   url: "https://www.twitter.com",
+  //   icon: <FaTwitter />,
+  //   text: "Twitter",
+  // },
   {
     id: nanoid(),
-    url: "https://www.twitter.com",
-    icon: <FaTwitter />,
-    text: "Twitter",
-  },
-  {
-    id: nanoid(),
-    url: "https://www.twitter.com",
+    url: "https://www.linkedin.com/in/catherine-anokwuru-5a4694199",
     icon: <FaLinkedin />,
     text: "Linkedin",
   },
   {
     id: nanoid(),
-    url: "https://www.twitter.com",
+    url: "https://wa.me/9014416358",
     icon: <FaWhatsapp />,
     text: "Whatsapp",
   },

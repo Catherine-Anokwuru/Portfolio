@@ -1,42 +1,25 @@
 import { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { links } from "../data";
-import AnchorLink from "react-anchor-link-smooth-scroll-v2";
-import useMediaQuery from "../hooks/useMediaQuery";
+import { HashLink } from "react-router-hash-link";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
-  const lowerCasePage = page.toLowerCase();
-
-  return (
-    <AnchorLink
-      className={`${
-        selectedPage === lowerCasePage
-          ? "text-orange underline text-base underline-offset-8 decoration-orange decoration-solid decoration-4 text-center font-medium "
-          : ""
-      } hover:text-orange transition duration-500`}
-      href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
-    >
-      {page}
-    </AnchorLink>
-  );
-};
-
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
   return (
     <nav className="fixed w-full h-[70px] flex flex-row justify-between items-center px-[7%] py-[5px] bg-dark-green  text-off-white shadow-lg shadow-white/10 z-50">
-      <h2 className="text-2xl desktop:text-orange desktop:font-bold desktop:text-3xl font-semibold font-garamond">
-        CA
-      </h2>
+      <HashLink to={"#home"}>
+        <h2 className="text-2xl desktop:text-orange desktop:font-bold desktop:text-3xl font-semibold font-garamond">
+          CA
+        </h2>
+      </HashLink>
 
       {/* small screen menu */}
       <div className="  w-[100%] h-[100%]">
         <button
-          className="p-3 desktop:hidden rounded-full bg-orange border-off-white border-2 left-[85%]  sm:left-[73%] relative top-1.5"
+          className="p-3 desktop:hidden rounded-full bg-orange border-off-white border-2 left-[85%] relative top-1.5"
           onClick={toggleLinks}
         >
           <FaBars className="h-5 w-5" />
@@ -78,14 +61,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       <div className="links-container lg:hidden ">
         <ul className="flex justify-between flex-row gap-7px transition duration-500ms ease-in-out all">
           {links.map((link) => {
-            const { id, text } = link;
+            const { id, text, url } = link;
             return (
-              <li key={id} className="py-[1.5rem] pl-[1rem] ">
-                <Link
-                  page={text}
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
+              <li key={id} className="py-[1.5rem] pl-[1rem] hover:text-orange">
+                <HashLink to={url}>{text}</HashLink>
               </li>
             );
           })}

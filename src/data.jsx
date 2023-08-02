@@ -1,3 +1,7 @@
+import nativity from './assets/nativity.png'
+import safemain from './assets/safemain.png'
+import hiredom from './assets/hiredom.png'
+import { nanoid } from "nanoid";
 import {
   FaWhatsapp,
   FaGithub,
@@ -24,58 +28,58 @@ import {
 
 export const links = [
   {
-    id: 1,
-    url: "/",
+    id: nanoid(),
+    url: "#home",
     text: "home",
   },
   {
-    id: 2,
-    url: "/about",
+    id: nanoid(),
+    url: "#about",
     text: "about",
   },
   {
-    id: 3,
-    url: "/skills",
+    id: nanoid(),
+    url: "#skills",
     text: "skills",
   },
   {
-    id: 4,
-    url: "/projects",
+    id: nanoid(),
+    url: "#projects",
     text: "projects",
   },
+  // {
+  //   id: 5,
+  //   url: "/resume",
+  //   text: "resume",
+  // },
   {
-    id: 5,
-    url: "/resume",
-    text: "resume",
-  },
-  {
-    id: 6,
-    url: "/contact",
+    id: nanoid(),
+    url: "#contact",
     text: "contact",
   },
 ];
 
 export const social = [
   {
-    id: 1,
+    id: nanoid(),
     url: "https://www.twitter.com",
     icon: <FaGithub />,
     text: "Github",
   },
   {
-    id: 2,
+    id: nanoid(),
     url: "https://www.twitter.com",
     icon: <FaTwitter />,
     text: "Twitter",
   },
   {
-    id: 3,
+    id: nanoid(),
     url: "https://www.twitter.com",
     icon: <FaLinkedin />,
     text: "Linkedin",
   },
   {
-    id: 4,
+    id: nanoid(),
     url: "https://www.twitter.com",
     icon: <FaWhatsapp />,
     text: "Whatsapp",
@@ -95,19 +99,19 @@ export const education = [
     id: 2,
     degree: "Graphic Design Specialization",
     school: "Coursera- California Institute of Arts",
-    date: "2020 - 2022",
+    date: "2022",
   },
   {
     id: 3,
-    degree: "West African Senior School Certificate Examination (WASSCE)",
-    school: "Powerfields Group of Schools",
-    date: "2011 – 2017",
+    degree: "JavaScript Tutorial and Projects Course",
+    school: "Udemy",
+    date: "2023",
   },
   {
     id: 4,
-    degree: "First School Leaving Certificate",
-    school: "Winsford Nursery and Primary School",
-    date: "2005 - 2011",
+    degree: "React 18 Tutorial and Projects Course",
+    school: "Udemy",
+    date: "2023",
   },
 ];
 
@@ -176,49 +180,45 @@ export const resumeIcon = [
 
 export const devSkills = [
   {
-    id: 1,
+    id: nanoid(),
     icon: <FaHtml5 />,
     title: "HTML5",
     level: "Intermediate",
   },
   {
-    id: 2,
+    id: nanoid(),
     icon: <FaCss3Alt />,
     title: "CSS",
     level: "Intermediate",
   },
+
   {
-    id: 3,
-    icon: <FaJsSquare />,
-    title: "Javascript",
-    level: "Intermediate",
-  },
-  {
-    id: 4,
+    id: nanoid(),
     icon: <FaSass />,
-    title: "SASS",
+    title: "SCSS",
     level: "Intermediate",
   },
   {
-    id: 5,
+    id: nanoid(),
     icon: <SiTailwindcss />,
     title: "TailwindCSS",
     level: "Intermediate",
   },
   {
-    id: 6,
-    icon: <FaReact />,
-    title: "ReactJs",
+    id: nanoid(),
+    icon: <FaJsSquare />,
+    title: "Javascript",
     level: "Intermediate",
   },
   {
-    id: 7,
-    icon: <SiWebflow />,
-    title: "Webflow",
-    level: "Beginner",
+    id: nanoid(),
+    icon: <FaReact />,
+    title: "ReactJS",
+    level: "Intermediate",
   },
+
   {
-    id: 8,
+    id: nanoid(),
     icon: <FaGitAlt />,
     title: "Git",
     level: "Beginner",
@@ -227,21 +227,56 @@ export const devSkills = [
 
 export const otherSkills = [
   {
-    id: 1,
+    id: nanoid(),
     icon: <SiAdobephotoshop />,
     title: "Adobe Photoshop",
     level: "Intermediate",
   },
   {
-    id: 2,
+    id: nanoid(),
     icon: <SiAdobeillustrator />,
     title: "Adobe Illustrator",
     level: "Intermediate",
   },
   {
-    id: 3,
+    id: nanoid(),
     icon: <SiAdobeindesign />,
     title: "Adobe Indesign",
     level: "Intermediate",
+  },
+  {
+    id: nanoid(),
+    icon: <SiWebflow />,
+    title: "Webflow",
+    level: "Beginner",
+  },
+];
+
+
+export const projects = [
+  {
+    id: nanoid(),
+    title: "Safemain",
+    description: "Company Website for SafeMain Integrated Services Limited",
+    image: safemain,
+    url: "https://safemain.com.ng/",
+    techStack: ["React", "HTML", "CSS"],
+  },
+  {
+    id: nanoid(),
+    title: "Nativity",
+    description: "E-commerce web application",
+    image: nativity,
+    url: "https://catherine-anokwuru.github.io/nativity/",
+    techStack: ["JavaScript", "HTML", "SCSS"],
+  },
+  {
+    id: nanoid(),
+    title: "Hiredom",
+    description:
+      "Landing page for an app that connects domestic workers with their clients",
+    image: hiredom,
+    url: "https://catherine-anokwuru.github.io/hiredom/",
+    techStack: ["JavaScript", "HTML", "SCSS"],
   },
 ];

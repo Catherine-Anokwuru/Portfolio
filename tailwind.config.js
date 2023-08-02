@@ -10,14 +10,14 @@ export default {
       colors: {
         "light-green": "#66FCF1",
         green: "#00DE61",
-        "dark-green": "#023729",
+        "dark-green": "#01152e",
         green2: "#00AF66",
-        orange: "#d96846",
+        orange: "#f58220",
         nude: "#cc8b65",
         grey: "#1F2833",
         black: "#252525",
         teal: "#17bebb",
-        "off-white": "#fbf3f2",
+        "off-white": "#fcf8f8",
       },
       fontFamily: {
         garamond: ["EB Garamond", "serif"],
@@ -47,13 +47,13 @@ export default {
         sm: { max: "600px" },
         // => @media (max-width: 639px) { ... }
 
-        phone: { min: "601px", max: "767px" },
+        phone: { max: "767px" },
         // => @media (min-width: 640px and max-width: 767px) { ... }
 
         tab: { min: "768px", max: "1023px" },
         // => @media (min-width: 768px and max-width: 1023px) { ... }
 
-        desktop: { min: "1025px" },
+        desktop: { min: "1024px" },
         // => @media (min-width: 1024px and max-width: 1279px) { ... }
       },
       fontSize: {

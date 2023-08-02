@@ -7,9 +7,9 @@ const Resume = () => {
       <div>
         <h1>resume</h1>
 
-        <div className="grid gap-10 grid-cols-[1fr_4fr] w-[80%] m-auto ">
+
           {/* ICONS TAB */}
-          <div className="my-auto ">
+          {/* <div className="my-auto ">
             {resumeIcon.map((info) => {
               const { icon, title } = info;
               return (
@@ -27,10 +27,10 @@ const Resume = () => {
                 </div>
               );
             })}
-          </div>
+          </div> */}
 
           {/* TAB INFO */}
-          <div className="shadow-r px-[3rem] py-[2rem]">
+          <div className="shadow-r px-[3rem] py-[2rem] w-[80%] m-auto">
             {education.map((info, index) => {
               const { degree, date, school, cgpa, id } = info;
               return (
@@ -60,7 +60,6 @@ const Resume = () => {
             })}
           </div>
         </div>
-      </div>
     </section>
   );
 };

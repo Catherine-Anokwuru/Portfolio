@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import { social } from "../data";
-import home from "../assets/home.jpg";
+import home from "../assets/home1.jpg";
 import About from "./About";
 import Resume from "./Resume";
 import Skills from "./Skills";
@@ -12,9 +12,9 @@ const Home = () => {
     <>
       <section
         id="home"
-        className=" pt-[70px]  px-[2%] h-[100vh] w-full overflow-hidden"
+        className=" pt-[70px]  px-[2%] h-[100vh] w-[100vw] overflow-hidden"
       >
-        <div className="grid-cols-[40%_60%] grid phone:grid-cols-1 phone:gap gap-x-[1rem] w-[90%] m-auto overflow-hidden">
+        <div className="grid-cols-2 grid phone:grid-cols-1 phone:gap gap-x-[1rem] h-[100%] w-[80%] phone:w-[90%] m-auto overflow-hidden">
           <div>
             <div className=" py-[10rem] phone:pb-[3rem] phone:pt-[6rem] text-dark-green font-opensans">
               <h2 className="text-[2.6rem] text-center phone:text-2xl tab:text-3xl font-garamond w-[100%]">
@@ -63,8 +63,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-[110%] phone:w-[100%] m-auto phone:mt-[3rem]">
-            <img src={home} alt="" className="w-[100%] h-auto" />
+          <div className="w-[90%] phone:w-[90%] m-auto overflow-hidden">
+            <img src={home} alt="" className="w-[100%] h-auto overflow-hidden" />
           </div>
         </div>
       </section>

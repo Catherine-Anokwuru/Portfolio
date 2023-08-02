@@ -15,7 +15,7 @@ function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   return (
     <div className="App">
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/portfolio">
         <Navbar />
         <Routes>
           <Route index element={<Home />} />

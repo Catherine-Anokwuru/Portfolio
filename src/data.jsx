@@ -24,6 +24,7 @@ import {
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiAdobeindesign,
+  SiFirebase,
 } from "react-icons/si";
 
 export const links = [
@@ -221,6 +222,12 @@ export const devSkills = [
     id: nanoid(),
     icon: <FaGitAlt />,
     title: "Git",
+    level: "Beginner",
+  },
+  {
+    id: nanoid(),
+    icon: <SiFirebase />,
+    title: "Firebase",
     level: "Beginner",
   },
 ];

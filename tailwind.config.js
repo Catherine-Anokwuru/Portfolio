@@ -47,13 +47,13 @@ export default {
         sm: { max: "600px" },
         // => @media (max-width: 639px) { ... }
 
-        phone: { max: "767px" },
+        phone: { max: "1024px" },
         // => @media (min-width: 640px and max-width: 767px) { ... }
 
         tab: { min: "768px", max: "1023px" },
         // => @media (min-width: 768px and max-width: 1023px) { ... }
 
-        desktop: { min: "1024px" },
+        // desktop: { min: "1024px" },
         // => @media (min-width: 1024px and max-width: 1279px) { ... }
       },
       fontSize: {

@@ -63,7 +63,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-[90%] phone:w-[100%] m-auto overflow-x-hidden flex justify-center pt-[2rem]">
+          <div className="w-[90%] phone:w-[100%] m-auto overflow-hidden flex justify-center pt-[2rem]">
             <img
               src={home}
               alt=""

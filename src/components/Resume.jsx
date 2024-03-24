@@ -3,7 +3,7 @@ import { GrCertificate } from "react-icons/gr";
 import { GiDiploma } from "react-icons/gi";
 const Resume = () => {
   return (
-    <section id="resume" className="leading-2xl py-[3rem]">
+    <section id="resume" className="leading-2xl py-[3rem] ">
       <div>
         <h1>resume</h1>
 

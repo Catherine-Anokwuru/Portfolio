@@ -25,7 +25,11 @@ import {
   SiAdobeillustrator,
   SiAdobeindesign,
   SiFirebase,
+  SiTypescript,
+  SiChakraui,
 } from "react-icons/si";
+
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const links = [
   {
@@ -75,13 +79,13 @@ export const social = [
   // },
   {
     id: nanoid(),
-    url: "https://www.linkedin.com/in/catherine-anokwuru-5a4694199",
+    url: "https://www.linkedin.com/in/catherine-anokwuru",
     icon: <FaLinkedin />,
     text: "Linkedin",
   },
   {
     id: nanoid(),
-    url: "https://wa.me/9014416358",
+    url: "https://wa.me/+2348056788338",
     icon: <FaWhatsapp />,
     text: "Whatsapp",
   },
@@ -203,6 +207,12 @@ export const devSkills = [
     id: nanoid(),
     icon: <SiTailwindcss />,
     title: "TailwindCSS",
+    level: "Beginner",
+  },
+  {
+    id: nanoid(),
+    icon: <SiChakraui />,
+    title: "ChakraUI",
     level: "Intermediate",
   },
   {
@@ -213,22 +223,28 @@ export const devSkills = [
   },
   {
     id: nanoid(),
+    icon: <SiTypescript />,
+    title: "Typexcript",
+    level: "Intermediate",
+  },
+  {
+    id: nanoid(),
     icon: <FaReact />,
     title: "ReactJS",
     level: "Intermediate",
+  },
+  {
+    id: nanoid(),
+    icon: <TbBrandNextjs />,
+    title: "Next.js",
+    level: "Beginner",
   },
 
   {
     id: nanoid(),
     icon: <FaGitAlt />,
     title: "Git",
-    level: "Beginner",
-  },
-  {
-    id: nanoid(),
-    icon: <SiFirebase />,
-    title: "Firebase",
-    level: "Beginner",
+    level: "Intermediate",
   },
 ];
 

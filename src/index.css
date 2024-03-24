@@ -6,6 +6,9 @@
 
 section {
   scroll-margin-top: 4rem;
+  overflow: hidden;
+  max-width: 1440px;
+  margin: auto;
 }
 html,
 body,
@@ -19,7 +22,10 @@ body,
   text-align: justify;
   cursor: default;
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
+}
+body{
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -166,10 +172,21 @@ li {
 }
 
 /* PROJECTS */
-.project-list {
+/* .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+} */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+ .project-list{
+   flex-direction: row;
+ }
+
 }
 
 .project:hover{

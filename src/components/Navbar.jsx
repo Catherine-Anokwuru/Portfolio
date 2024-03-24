@@ -9,7 +9,7 @@ const Navbar = () => {
     setShowLinks(!showLinks);
   };
   return (
-    <nav className="fixed w-full h-[70px] flex flex-row justify-between items-center px-[7%] py-[5px] bg-dark-green  text-off-white shadow-lg shadow-white/10 z-50">
+    <nav className="fixed w-[100vw] h-[70px] flex flex-row justify-between items-center px-[7%] py-[5px] bg-dark-green  text-off-white shadow-lg shadow-white/10 z-50 ">
       <HashLink to={"#home"}>
         <h2 className="text-2xl desktop:text-orange desktop:font-bold desktop:text-3xl font-semibold font-garamond">
           CA
@@ -17,15 +17,19 @@ const Navbar = () => {
       </HashLink>
 
       {/* small screen menu */}
-      <div className="  w-[100%] h-[100%]">
-        <button
-          className="p-3 desktop:hidden rounded-full bg-orange border-off-white border-2 left-[85%] relative top-1.5"
-          onClick={toggleLinks}
-        >
-          <FaBars className="h-5 w-5" />
-        </button>
+      {!showLinks && (
+        <div>
+          <button
+            className="p-3 desktop:hidden rounded-full bg-orange border-off-white border-2 "
+            onClick={toggleLinks}
+          >
+            <FaBars className="h-5 w-5" />
+          </button>
+        </div>
+      )}
 
-        {showLinks && (
+      {showLinks && (
+        <div>
           <aside className="links-container fixed right-0 top-0  h-[100vh] w-[80%] bg-off-white transition-[width] ease-in-out 1s desktop:hidden">
             <div className="">
               <button
@@ -53,8 +57,8 @@ const Navbar = () => {
               </ul>
             </div>
           </aside>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* large screen menu */}
 

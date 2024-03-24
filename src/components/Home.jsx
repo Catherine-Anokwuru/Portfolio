@@ -12,9 +12,9 @@ const Home = () => {
     <>
       <section
         id="home"
-        className=" py-[70px] h-[100%] w-[100vw] overflow-x-hidden max-w-[1440px]m-auto"
+        className=" py-[70px] h-[100%] w-[100vw] overflow-hidden max-w-[1440px]m-auto"
       >
-        <div className="grid-cols-2 grid phone:grid-cols-1 gap-x-[1rem] h-[100%] w-[80%] phone:w-[90%] m-auto overflow-x-hidden ">
+        <div className="grid-cols-2 grid phone:grid-cols-1 gap-x-[1rem] h-[100%] w-[80%] phone:w-[90%] m-auto ">
           <div className="flex w-[100%] justify-center">
             <div className=" phone:py-0 phone:pb-[0] phone:pt-[1rem] text-dark-green font-opensans flex flex-col justify-center align-middle w-100%]">
               <h2 className="text-[2.6rem] text-center phone:text-2xl font-garamond w-[100%]">

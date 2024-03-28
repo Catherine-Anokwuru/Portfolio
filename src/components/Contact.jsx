@@ -11,10 +11,10 @@ const Contact = () => {
     setSending(true);
     emailjs
       .sendForm(
-        "service_lhmtaqc",
+        "service_fi6hmvg",
         "template_1lk30ee",
         form.current,
-        "Q2HhI-ynGlPHMDKLP"
+        "qage5ECqQse7RqUwl"
       )
       .then(
         () => {
@@ -23,6 +23,7 @@ const Contact = () => {
           setSending(false);
         },
         () => {
+          setSending(false);
           toast.error("There was an error");
         }
       );
